@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D86C3F73-ACA8-47CA-BA76-437BC66A4A0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BackEnd</RootNamespace>
+    <AssemblyName>BackEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.TimeProvider, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.TimeProvider.8.0.1\lib\net462\Microsoft.Bcl.TimeProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=8.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.8.11.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=8.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.8.11.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=8.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.8.11.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=8.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.8.11.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.2\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=8.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.8.11.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\Entity\Canton.cs" />
+    <Compile Include="Entidades\Entity\Categoria.cs" />
+    <Compile Include="Entidades\Entity\Conversacion.cs" />
+    <Compile Include="Entidades\Entity\Error.cs" />
+    <Compile Include="Entidades\Entity\Imagen.cs" />
+    <Compile Include="Entidades\Entity\Mensaje.cs" />
+    <Compile Include="Entidades\Entity\Provincia.cs" />
+    <Compile Include="Entidades\Entity\Resena.cs" />
+    <Compile Include="Entidades\Entity\Servicio.cs" />
+    <Compile Include="Entidades\Entity\Sesion.cs" />
+    <Compile Include="Entidades\Entity\SubCategoria.cs" />
+    <Compile Include="Entidades\Entity\SubCategoriaServicio.cs" />
+    <Compile Include="Entidades\Entity\Usuario.cs" />
+    <Compile Include="Entidades\Enum\enumErrores.cs" />
+    <Compile Include="Entidades\Request\ReqConversacion\ReqEliminarConversacion.cs" />
+    <Compile Include="Entidades\Request\ReqConversacion\ReqEliminarMensaje.cs" />
+    <Compile Include="Entidades\Request\ReqConversacion\ReqInsertarConversacion.cs" />
+    <Compile Include="Entidades\Request\ReqConversacion\ReqInsertarMensaje.cs" />
+    <Compile Include="Entidades\Request\ReqConversacion\ReqListarConversacionesPorUsuario.cs" />
+    <Compile Include="Entidades\Request\ReqConversacion\ReqListarMensajesPorConversacion.cs" />
+    <Compile Include="Entidades\Request\ReqResena\ReqEliminarResena.cs" />
+    <Compile Include="Entidades\Request\ReqResena\ReqInsertarResena.cs" />
+    <Compile Include="Entidades\Request\ReqResena\ReqListarResenasPorServicio.cs" />
+    <Compile Include="Entidades\Request\ReqResena\ReqListarResenasPorUsuario.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqEliminarImagen.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqInsertarImagen.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqListarImagenesPorServicio.cs" />
+    <Compile Include="Entidades\Request\ReqUsuario\ReqActualizarDatosUsuario.cs" />
+    <Compile Include="Entidades\Request\ReqUsuario\ReqActualizarFotoPerfil.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqActualizarServicio.cs" />
+    <Compile Include="Entidades\Request\ReqUsuario\ReqCompletarPerfil.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqEliminarServicio.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqInsertarServicio.cs" />
+    <Compile Include="Entidades\Request\ReqUsuario\ReqInsertarUsuario.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqListarServiciosPorCategoriaId.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqListarServiciosPorSubCategoriaId.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqListarServiciosPorUsuarioId.cs" />
+    <Compile Include="Entidades\Request\ReqUsuario\ReqLoginUsuario.cs" />
+    <Compile Include="Entidades\Request\ReqServicio\ReqObtenerServicio.cs" />
+    <Compile Include="Entidades\Request\ReqUsuario\ReqObtenerUsuario.cs" />
+    <Compile Include="Entidades\Request\ReqUsuario\ReqVerificacion.cs" />
+    <Compile Include="Entidades\Response\ResConversacion\ResEliminarConversacion.cs" />
+    <Compile Include="Entidades\Response\ResConversacion\ResEliminarMensaje.cs" />
+    <Compile Include="Entidades\Response\ResConversacion\ResInsertarConversacion.cs" />
+    <Compile Include="Entidades\Response\ResConversacion\ResInsertarMensaje.cs" />
+    <Compile Include="Entidades\Response\ResConversacion\ResListarConversacionesPorUsuario.cs" />
+    <Compile Include="Entidades\Response\ResConversacion\ResListarMensajesPorConversacion.cs" />
+    <Compile Include="Entidades\Response\ResResena\ResEliminarResena.cs" />
+    <Compile Include="Entidades\Response\ResResena\ResInsertarResena.cs" />
+    <Compile Include="Entidades\Response\ResResena\ResListarResenasPorServicio.cs" />
+    <Compile Include="Entidades\Response\ResResena\ResListarResenasPorUsuario.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResEliminarImagen.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResInsertarImagen.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResListarImagenesPorServicio.cs" />
+    <Compile Include="Entidades\Response\ResUsuario\ResActualizarDatosUsuario.cs" />
+    <Compile Include="Entidades\Response\ResUsuario\ResActualizarFotoPerfil.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResActualizarServicio.cs" />
+    <Compile Include="Entidades\Response\ResBase.cs" />
+    <Compile Include="Entidades\Response\ResUsuario\ResCompletarPerfil.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResEliminarServicio.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResInsertarServicio.cs" />
+    <Compile Include="Entidades\Response\ResUsuario\ResInsertarUsuario.cs" />
+    <Compile Include="Entidades\Response\ResListas\ResListarCantones.cs" />
+    <Compile Include="Entidades\Response\ResListas\ResListarCategorias.cs" />
+    <Compile Include="Entidades\Response\ResListas\ResListarProvincias.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResListarServicios.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResListarServiciosPorCategoriaId.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResListarServiciosPorSubCategoriaId.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResListarServiciosPorUsuarioId.cs" />
+    <Compile Include="Entidades\Response\ResListas\ResListarSubCategorias.cs" />
+    <Compile Include="Entidades\Response\ResUsuario\ResLoginUsuario.cs" />
+    <Compile Include="Entidades\Response\ResServicio\ResObtenerServicio.cs" />
+    <Compile Include="Entidades\Response\ResUsuario\ResObtenerUsuario.cs" />
+    <Compile Include="Entidades\Response\ResUsuario\ResVerificacion.cs" />
+    <Compile Include="Logica\LogConversacion\LogEliminarConversacion.cs" />
+    <Compile Include="Logica\LogConversacion\LogEliminarMensaje.cs" />
+    <Compile Include="Logica\LogConversacion\LogInsertarConversacion.cs" />
+    <Compile Include="Logica\LogConversacion\LogInsertarMensaje.cs" />
+    <Compile Include="Logica\LogConversacion\LogListarConversacionesPorUsuario.cs" />
+    <Compile Include="Logica\LogConversacion\LogListarMensajesPorConversacion.cs" />
+    <Compile Include="Logica\LogResena\LogEliminarResena.cs" />
+    <Compile Include="Logica\LogResena\LogInsertarResena.cs" />
+    <Compile Include="Logica\LogResena\LogListarResenasPorServicio.cs" />
+    <Compile Include="Logica\LogResena\LogListarResenasPorUsuario.cs" />
+    <Compile Include="Logica\LogServicio\LogEliminarImagen.cs" />
+    <Compile Include="Logica\LogServicio\LogInsertarImagen.cs" />
+    <Compile Include="Logica\LogServicio\LogListarImagenesPorServicio.cs" />
+    <Compile Include="Logica\LogUsuario\HelperMailcs.cs" />
+    <Compile Include="Logica\LogUsuario\LogActualizarDatosUsuario.cs" />
+    <Compile Include="Logica\LogUsuario\LogActualizarFotoPerfil.cs" />
+    <Compile Include="Logica\LogServicio\LogActualizarServicio.cs" />
+    <Compile Include="Logica\LogUsuario\LogCompletarPerfil.cs" />
+    <Compile Include="Logica\LogServicio\LogEliminarServicio.cs" />
+    <Compile Include="Logica\LogServicio\LogInsertarServicio.cs" />
+    <Compile Include="Logica\LogUsuario\LogInsertarUsuario.cs" />
+    <Compile Include="Logica\LogListas\LogListarCantones.cs" />
+    <Compile Include="Logica\LogListas\LogListarCategorias.cs" />
+    <Compile Include="Logica\LogListas\LogListarProvincias.cs" />
+    <Compile Include="Logica\LogServicio\LogListarServicios.cs" />
+    <Compile Include="Logica\LogServicio\LogListarServiciosPorCategoriaId.cs" />
+    <Compile Include="Logica\LogServicio\LogListarServiciosPorSubCategoriaId.cs" />
+    <Compile Include="Logica\LogServicio\LogListarServiciosPorUsuarioId.cs" />
+    <Compile Include="Logica\LogListas\LogListarSubCategorias.cs" />
+    <Compile Include="Logica\LogUsuario\LogLoginUsuario.cs" />
+    <Compile Include="Logica\LogServicio\LogObtenerServicio.cs" />
+    <Compile Include="Logica\LogUsuario\LogObtenerUsuario.cs" />
+    <Compile Include="Logica\LogUsuario\LogVerificacion.cs" />
+    <Compile Include="Logica\TokenHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{3677ef25-c505-459f-9cac-8e79dc87f60e}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
